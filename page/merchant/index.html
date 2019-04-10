@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merchant Page</title>
+        <link rel="stylesheet" href="../../lib/bootstrap.css">
+        <link rel="stylesheet" href="../../css/map.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">        
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-11 border-right">
+                        <img src="../../images/logo2.jpg" height="100" alt="Logo">
+                    </div>
+                    <div class="col-1 text-center">
+                        <i class="fas fa-user"></i>
+                        <a href="Login">LOGIN</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-merchant-background">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="business-name">Business Name</label>
+                                <input type="text" class="form-control" id="business-name" placeholder="Enter your business name">
+                            </div>
+                            <div class="form-group">
+                                <label for="business-category">Deals Category</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Category
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Food & Beverages</a>
+                                        <a class="dropdown-item" href="#">Fashion</a>
+                                        <a class="dropdown-item" href="#">Groceries</a>
+                                        <a class="dropdown-item" href="#">Household Item</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-offer">Offer</label>
+                                <input type="text" class="form-control" id="business-offer" placeholder="Enter your offer">
+                            </div>
+                            <div class="form-group">
+                                <label for="business-name">Location</label>
+                                <input id="pac-input" class="form-control" type="text" placeholder="Enter your location">
+                                <div id="map"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../../js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDODts9fGM7Kbo31JjBrVaZSz9xAmFp7lE&libraries=places&callback=initAutocomplete"
+        async defer></script>
+    </body>
+</html>
